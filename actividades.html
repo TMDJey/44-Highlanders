@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACTIVIDADES Y CALENDARIO - 44 Highlanders</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="conocenos.html">CONÓCENOS</a></li>
+        <li><a href="actividades.html">ACTIVIDADES Y CALENDARIO</a></li>
+        <li><a href="biblioteca.html">BIBLIOTECA</a></li>
+        <li><a href="unete.html">SE PARTE DE NOSOTROS</a></li>
+      </ul>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <header class="escudoScout">
+      <h1 class="nombrePrincipal">CALENDARIO</h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="ContenidoPrincipal">
+      <!-- Sección Calendario -->
+      <section class="tarjeta" id="inicio">
+        <h2>Calendario</h2>
+        
+        <!-- CALENDARIO EN JAVASCRIPT PURO -->
+        <div class="contenedor-calendario">
+          <div class="encabezado">
+            <button id="anterior">&lt;</button>
+            <h2 id="mes-año"></h2>
+            <button id="siguiente">&gt;</button>
+          </div>
+
+          <div class="dias-semana">
+            <div>Dom</div><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div>
+          </div>
+
+          <div id="dias" class="cuadrilla-dias"></div>
+        </div>
+      </section>
+
+      <!-- Próximas Actividades -->
+      <section class="tarjeta" id="conocenos">
+        <h2>Próximas Actividades</h2>
+        <p>
+          Cada actividad puede mostrar:
+          <ul class="lista-estilizada">
+            <li>📌 Nombre de la actividad</li>
+            <li>📅 Fecha</li>
+            <li>🕒 Hora</li>
+            <li>📍 Lugar</li>
+            <li>📝 Descripción</li>
+            <li>🖼️ Imagen, si es necesario</li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- Noticias -->
+      <section class="tarjeta">
+        <h2>Noticias</h2>
+        <p>
+          Publicar información como:
+          <ul class="lista-estilizada">
+            <li>📢 Avisos importantes</li>
+            <li>🗓️ Próximos eventos</li>
+            <li>⛺ Campamentos</li>
+            <li>🎒 Excursiones</li>
+            <li>⚜️ Actividades realizadas</li>
+            <li>📰 Noticias generales del grupo</li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- Lema -->
+      <section class="tarjeta">
+        <p class="Lema">Lealtad, Honor y Gloria</p>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="pie-pagina">
+      <div class="contenedor-footer">
+        <div class="columna-footer">
+          <h3>Grupo Scout 44 Highlanders</h3>
+          <p>Formando niñas, niños y jóvenes con valores, liderazgo y compromiso con la comunidad mediante el escultismo.</p>
+          <p class="lema-footer">"Lealtad, Honor y Gloria"</p>
+        </div>
+        <div class="columna-footer">
+          <h4>Contacto Rápido</h4>
+          <ul class="lista-contacto">
+            <li>💬 <strong>WhatsApp:</strong> +52 56 1066 0711</li>
+            <li>✉️ <strong>Correo:</strong> scout.grupo44@gmail.com</li>
+            <li>🕒 <strong>Reuniones:</strong> Sábados 15:00 a 17:00 hrs</li>
+            <li>📍 <strong>Lugar:</strong> Parque Tezozomoc, Puerta 5</li>
+          </ul>
+        </div>
+        <div class="columna-footer">
+          <h4>Síguenos</h4>
+          <div class="redes-sociales">
+            <a href="https://www.facebook.com/44Highlanders" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/gruposcout44highlanders/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer">ChatBot WhatsApp</a>
+          </div>
+        </div>
+        <div class="columna-footer">
+          <h4>Asociaciones</h4>
+          <p class="subtitulo-asociaciones">Con quien estamos asociados:</p>
+          <div class="asociaciones-logos">
+            <img src="img/ansi.png" alt="ANSI" title="Asociación Nacional Scout Independientes" />
+          </div>
+        </div>
+      </div>
+      <div class="derechos-reservados">
+        <p>&copy; 2026 Grupo Scout 44 Highlanders. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- ENLACE AL ARCHIVO JAVASCRIPT DEL CALENDARIO -->
+    <script src="js/Calendario.js"></script>
+  </body>
+</html>
