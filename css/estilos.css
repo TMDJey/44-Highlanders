@@ -20,7 +20,12 @@
 }
 
 body {
-  background-image: url('https://www.latrochadigital.com.ar/wp-content/uploads/2022/03/bosque-1-e1577589217640.jpg');
+  background-image:url(../img/Fondo_Bosque.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--color-fondo);
   font-family: 'Open Sans', sans-serif;
   color: var(--color-texto);
   margin: 0;
@@ -630,4 +635,93 @@ nav a:hover {
 .punto:hover, .punto.activo {
   background-color: var(--color-secundario);
   transform: scale(1.2);
+}
+
+/* =========================================
+   ADAPTACIÓN PARA TELÉFONOS MÓVILES
+   ========================================= */
+@media (max-width: 768px) {
+  /* Menú más compacto y fácil de tocar */
+  .menu {
+    padding: 10px 12px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 8px 12px;
+    font-size: 0.78rem;
+  }
+
+  /* Encabezado menos pesado en vertical */
+  .escudoScout {
+    padding: 35px 15px 25px;
+    gap: 12px;
+  }
+
+  .logo {
+    max-width: 135px;
+  }
+
+  /* Tarjetas con mejor respiración en pantalla chica */
+  .ContenidoPrincipal {
+    padding: 15px 12px 45px;
+    gap: 24px;
+  }
+
+  .tarjeta {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+  }
+
+  /* Lema más proporcionado en celular */
+  .Lema {
+    padding: 55px 15px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Carrusel cómodo en pantallas pequeñas */
+  .carrusel-slide img {
+    height: 230px;
+  }
+
+  .carrusel-btn {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+
+  .carrusel-btn.prev {
+    left: 8px;
+  }
+
+  .carrusel-btn.next {
+    right: 8px;
+  }
+
+  /* Calendario ajustado al ancho del teléfono */
+  .contenedor-calendario {
+    padding: 14px;
+  }
+
+  .cuadrilla-dias div {
+    padding: 8px 0;
+    font-size: 0.82rem;
+  }
+
+  /* Footer más limpio y centrado en móvil */
+  .pie-pagina {
+    padding: 35px 16px 20px;
+    margin-top: 35px;
+  }
+
+  .contenedor-footer {
+    gap: 24px;
+  }
 }
